@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이선경 포토폴리오</title>
+    
+    <link href="css/main.css" rel="stylesheet"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libsjquery/3.6.0/jquery.min.js" 
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    // 스크립트 주석 자바스크립트(기본,복잡), 제이쿼리
+    $(function(){
+        //스크립트 코드작성
+        //모션그래픽 탭메뉴 작성
+        //메뉴를 클릭하면 클래스명 on이 붙고 떨어지도록 작성
+        $('.youtube_menu li').click(function(){
+            $('.youtube_menu li').removeClass('on')
+            $(this).addClass('on');   
+
+            $('meun_cont').removeClass('on');
+            $('.meun_cont').eq($(this).index()).addClass('on');
+        
+        });
+
+
+        //a태그 기능 방지
+        $('.youtube_menu li a').click(function(e){
+            e.preventDefault();
+        });
+        
+    });//jquery end
+</script>
+
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <a href="#">sunkyeong</a>
+            </h1>
+            <p><a href="#" download>resume</a></p>
+        </div>
+    </header>
+    <!--메인비주얼-->
+    <section class="main_visual">
+        <div>
+            <h2>multi designer</h2>
+            <p>lee sun kyeong</p>
+        </div>
+    </section><!-- .main_visual end-->
+    <!-- 베스트 포트폴리오-->
+    <section class="best">
+        <h3>베스트 포트폴리오</h3>
+        <div class="best_box">
+            <div class="info">
+                <p class="cate">#홍보영상</p>
+                <h4>바버, 오늘과 과거를 잇다.</h4>
+                <p class="produce">연출, 촬영, 편집, 디자인, 특수효과</p>
+                <p class="text">제작목적,콘셉트 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, 
+                    beatae excepturi itaque tempora a quis, maiores nulla,
+                     minus corrupti at quasi inventore adipisci omnis est non vero culpa ipsam odio!</p> 
+                     <dl>
+                         <dt>프로그램</dt>
+                         <dd>potoshop, permiere pro, after effects</dd>
+                     </dl>
+                     <dl>
+                         <dt>배경음악</dt>
+                         <dd>
+                             사월 - 새로운 마음</dd>
+                     </dl>
+                     <dl>
+                         <dt>러닝타임</dt>
+                         <dd>3m 35s</dd>
+                          
+                         
+                        </dl>
+                        <ul>
+                            <li><a href="#">영상보기</a></li>
+                            <li><a href="#">기획서보기</a></li>
+                        </ul>
+                    </div><!--.best_box end -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/D92O5JT3E8A"
+                             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- .youtube_list end-->
+
+                </div><!--.info end -->
+            
+        <div class="best_box">
+       
+            <div class="info">
+                <p class="cate"># 쇼핑.패션 </p>
+                <h4>바버, 오늘과 과거를 잇다.</h4>
+                <p class="produce">디자인, 퍼블리싱</p>
+                <p class="text"> 
+                    제작목적, 콘셉트 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quidem inventore harum nostrum beatae, maxime voluptatum adipisci libero amet facilis voluptas aperiam, 
+                    quibusdam nihil eaque a illo! Reiciendis quia a recusandae.
+                </p>
+                <dl>
+                    <dt>프로그램</dt>
+                    <dd>potoshop, vs code, html, css</dd>
+                </dl>
+                <ul>
+                    <li><a href="#">웹페이지보기</a></li>
+                    <li><a href="#">기획서보기</a></li>
+                </ul>
+          
+            </div><!--.info end-->
+            <div class="web_design">
+                <figure>
+                    <img src="images/wos1.jpg"alt=""/>
+                </figure>
+            </div><!--.web_design end -->
+        </div><!--.best_box end --> 
+        
+            <!--카테고리별 유튜브 적용-->
+        <section class="youtube_wrap">
+        <h3>모션 그래픽</h3>
+        <ul class="youtube_menu">
+            <li class="on"><a href= "#">게임</a></li>
+            <li><a href="#">광고영상</a></li>
+            <li><a href="#">홍보영상</a></li>
+            <li><a href="#">뮤비티저</a></li>
+            <li><a href= "#">영화티저</a></li>
+        </ul><!--.youtube_menu end-->
+        <div class="youtube_cont 4 뮤비티저">
+            <div class="meun_cont">
+                <div class="box"><!-- .box 1 -->
+                    <div class=" youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/a-fk9LDR_6U"
+                             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!--youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>밀레니아 메이킹 다큐멘터리</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator.premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>사월 - 새로운 마음</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com/">https://www.youtube.com/</a></dd>
+                        </dl>
+                    </div><!--.info end-->
+                </div><!-- .box 1 -->
+
+                <div class="box"><!-- .box 1 -->
+                    <div class=" youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/a-fk9LDR_6U"
+                             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!--youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>밀레니아 메이킹 다큐멘터리</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator.premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>사월 - 새로운 마음</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com/">https://www.youtube.com/</a></dd>
+                        </dl>
+                    </div><!--.info end-->
+                </div><!-- .box 1 -->
+                
+                <div class="box"><!-- .box 1 -->
+                    <div class=" youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/a-fk9LDR_6U"
+                             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!--youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>밀레니아 메이킹 다큐멘터리</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator.premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>사월 - 새로운 마음</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com/">https://www.youtube.com/</a></dd>
+                        </dl>
+                    </div><!--.info end-->
+                </div><!-- .box 1 -->
+
+          
+            </div><!--.youtube_cont 5 영화티저-->
+
+        </div><!--.youtube_cont end-->
+        </section><!--.youtube_wrap end-->
+
+        <section class="g_design">
+            <h3> 2D 디자인</h3>
+            <em> 클릭하시면 큰 이미지를 보실 수 있습니다.</em>
+            <div class="img__list">
+                <div>
+                    <a href="images/biox01.png"data-fancybox="images">
+                        <figure>
+                            <img src="images/biox01.png" alt/>
+                            </figure>
+                            <ul>
+                                <li>캐릭터디자인</li>
+                            <li>목적,제목,프로그램</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img__list">
+                <div>
+                    <a href="images/box01.png"data-fancybox="images">
+                        <img src="images/box01.png" alt/>
+                        <figure>
+                            <img src="images/box01.png" alt/>
+                            </figure>
+                            <ul>
+                                <li>캐릭터디자인</li>
+                            <li>목적,제목,프로그램</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img__list">
+                <div>
+                    <a href="images/box01.png"data-fancybox="images">
+                        <figure>
+                            <img src="images/box01.png" alt/>
+                            </figure>
+                            <ul>
+                                <li>캐릭터디자인</li>
+                            <li>목적,제목,프로그램</li>
+                        </ul>
+                    </div>
+                </div>
+            </section><!--.g_design end-->
+</body>
+</html>
